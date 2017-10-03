@@ -1,0 +1,402 @@
+/* line 7, index.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 11, index.scss */
+html {
+  font-size: 20px;
+}
+@media (max-width: 550px) {
+  /* line 11, index.scss */
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 11, index.scss */
+  html {
+    font-size: 12px;
+  }
+}
+
+/* line 21, index.scss */
+body {
+  background-color: #fff9bc;
+}
+
+/*Clock*/
+/* line 26, index.scss */
+.clock-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 31, index.scss */
+.clock-border {
+  width: 300px;
+  height: 300px;
+  background-color: #112ebf;
+  border-radius: 50%;
+  border: 3px solid silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 42, index.scss */
+.clock {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #50cfd8;
+  border-radius: 50%;
+}
+
+/* line 52, index.scss */
+.face {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 61, index.scss */
+.half-circle {
+  width: 130px;
+  height: 260px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #edebda;
+  border-radius: 150px 0 0 150px;
+  z-index: 1;
+}
+
+/* line 72, index.scss */
+.segment > div {
+  width: 120px;
+  height: 120px;
+  top: 0;
+  left: 130px;
+  position: absolute;
+  background-color: #edebda;
+  border-radius: 0 125px 0 0;
+  transform-origin: 0 130px;
+}
+
+/* line 83, index.scss */
+.backlight {
+  animation: countdown 30s linear forwards;
+}
+
+/* line 87, index.scss */
+.segment div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: 2.5s;
+}
+
+/* line 92, index.scss */
+.segment div:nth-child(2) {
+  transform: rotate(15deg);
+  animation-delay: 5s;
+}
+
+/* line 97, index.scss */
+.segment div:nth-child(3) {
+  transform: rotate(30deg);
+  animation-delay: 7.5s;
+}
+
+/* line 102, index.scss */
+.segment div:nth-child(4) {
+  transform: rotate(45deg);
+  animation-delay: 10s;
+}
+
+/* line 107, index.scss */
+.segment div:nth-child(5) {
+  transform: rotate(60deg);
+  animation-delay: 12.5s;
+}
+
+/* line 112, index.scss */
+.segment div:nth-child(6) {
+  transform: rotate(75deg);
+  animation-delay: 15s;
+}
+
+/* line 117, index.scss */
+.segment div:nth-child(7) {
+  transform: rotate(90deg);
+  animation-delay: 17.5s;
+}
+
+/* line 122, index.scss */
+.segment div:nth-child(8) {
+  transform: rotate(105deg);
+  animation-delay: 20s;
+}
+
+/* line 127, index.scss */
+.segment div:nth-child(9) {
+  transform: rotate(120deg);
+  animation-delay: 22.5s;
+}
+
+/* line 132, index.scss */
+.segment div:nth-child(10) {
+  transform: rotate(135deg);
+  animation-delay: 25s;
+}
+
+/* line 137, index.scss */
+.segment div:nth-child(11) {
+  transform: rotate(150deg);
+  animation-delay: 27.5s;
+}
+
+/* line 142, index.scss */
+.segment div:nth-child(12) {
+  transform: rotate(165deg);
+  animation-delay: 30s;
+}
+
+/* line 147, index.scss */
+.centre {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 68px;
+  left: 68px;
+  background-color: #edebda;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+/* line 158, index.scss */
+.centre-dial {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 43px;
+  left: 44px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+/* line 169, index.scss */
+.dial {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  border-bottom: 120px solid black;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform-origin: 10px 120px;
+  z-index: 4;
+}
+
+/* line 180, index.scss */
+.turn {
+  animation: turn 30s linear forwards;
+}
+
+/* line 184, index.scss */
+.horizontal {
+  position: absolute;
+  width: 260px;
+  height: 3px;
+  top: 129px;
+  left: 0;
+  background-color: black;
+  z-index: 3;
+}
+
+/* line 194, index.scss */
+.vertical {
+  width: 3px;
+  height: 260px;
+  top: 0;
+  left: 128px;
+  position: absolute;
+  background-color: black;
+  z-index: 3;
+}
+
+/* line 204, index.scss */
+.mark {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  top: -10px;
+  left: 0;
+  z-index: 2;
+}
+/* line 211, index.scss */
+.mark > div {
+  top: 0;
+  left: 130px;
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  transform-origin: 0 138px;
+}
+
+/* line 224, index.scss */
+.mark div:nth-of-type(1) {
+  transform: rotate(30deg) translate(0px, 15px);
+}
+
+/* line 224, index.scss */
+.mark div:nth-of-type(2) {
+  transform: rotate(60deg) translate(0px, 15px);
+}
+
+/* line 224, index.scss */
+.mark div:nth-of-type(4) {
+  transform: rotate(120deg) translate(0px, 15px);
+}
+
+/* line 224, index.scss */
+.mark div:nth-of-type(5) {
+  transform: rotate(150deg) translate(0px, 15px);
+}
+
+/* line 224, index.scss */
+.mark div:nth-of-type(7) {
+  transform: rotate(210deg) translate(0px, 15px);
+}
+
+/* line 224, index.scss */
+.mark div:nth-of-type(8) {
+  transform: rotate(240deg) translate(0px, 15px);
+}
+
+/* line 224, index.scss */
+.mark div:nth-of-type(10) {
+  transform: rotate(300deg) translate(0px, 15px);
+}
+
+/* line 224, index.scss */
+.mark div:nth-of-type(11) {
+  transform: rotate(330deg) translate(0px, 15px);
+}
+
+/* line 230, index.scss */
+.mark div:nth-of-type(3) {
+  display: none;
+}
+
+/* line 230, index.scss */
+.mark div:nth-of-type(6) {
+  display: none;
+}
+
+/* line 230, index.scss */
+.mark div:nth-of-type(9) {
+  display: none;
+}
+
+@keyframes countdown {
+  /* line 236, index.scss */
+  0% {
+    background-color: #fff787;
+  }
+
+  /* line 239, index.scss */
+  100% {
+    background-color: #fff787;
+  }
+}
+
+@keyframes turn {
+  /* line 245, index.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 248, index.scss */
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/*Game*/
+/* line 255, index.scss */
+.game {
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 550px) {
+  /* line 255, index.scss */
+  .game {
+    height: 250px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 255, index.scss */
+  .game {
+    height: 200px;
+  }
+}
+
+/* line 272, index.scss */
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 276, index.scss */
+.buttons button {
+  font-family: 'Open Sans', sans-serif;
+  border: 3px solid silver;
+  background-color: #112ebf;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 20px;
+  width: 170px;
+  cursor: pointer;
+}
+
+/* line 288, index.scss */
+ul {
+  background: #50cfd8;
+  border: 3px solid silver;
+  height: 22.5%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  display: flex;
+  list-style-type: none;
+  padding: 1%;
+  align-items: center;
+  justify-content: center;
+  cursor: move;
+  color: white;
+}
+/* line 302, index.scss */
+ul li {
+  font-size: 2.5rem;
+  background-color: #112ebf;
+  margin: 0 0.75%;
+  width: 11%;
+  height: 100%;
+  text-align: center;
+  box-shadow: 2px 2px 2px #111111;
+  vertical-align: middle;
+  line-height: 2.5rem;
+}

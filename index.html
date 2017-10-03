@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <title>Countdown</title>
+     <link href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:800" rel="stylesheet"> 
+     <link rel="stylesheet" type="text/css" href="dist/index.css">
+ </head>
+
+ <body>
+    <div class="clock-wrap">
+      <div class="clock-border">
+        <div class="clock">
+          <div class="face">
+            <div class="half-circle"></div>
+            <div class="mark">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="segment">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="centre">
+              <div class="centre-dial"></div>
+            </div>
+            <div class="dial"></div>
+            <div class="vertical"></div>
+            <div class="horizontal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game">
+      <div class="buttons">
+        <button id="new">NEW GAME</button>
+        <button id="reveal">REVEAL</button>
+      </div>
+      <ul id="question">
+      </ul>
+      <ul id="solution">
+      </ul>
+    </div>
+    <audio src="dist/countdown.mp3" preload></audio>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="dist/index.js"></script>
+ </body>
+ </html>
+
